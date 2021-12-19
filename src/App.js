@@ -12,7 +12,7 @@ const App = () => {
     const getWeus = async () =>{
         await axios.get("https://api.themoviedb.org/3/tv/airing_today?api_key=8597e491ed6e80f0de12e349eb60ea6e&language=en-US&page=1")
             .then(hihi =>{
-                console. log(hihi.data.results)
+                console.log(hihi.data.results)
                 //내가 해당 데이터를 통 틀어서 이름을 hihi 라고 정하였고.
                 //해당 이름을 앞에 넣어주고 테스트 페이지에서 데이터의 이름과 값들을 입력하고, 데이터의 형태를
                 //유저 데이터 부분에서 매칭되도록 변경/적용해준다.
@@ -39,6 +39,7 @@ const App = () => {
                     {yeong.name}
                 </h1>
             ))}
+            {/*명칭을 임의로 정해서 위의 링크의 데이터 값들을 보고 데이터 이름을 입력해 함수를 선언해준다.*/}
         </div>
     );
 };
